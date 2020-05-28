@@ -1,0 +1,12 @@
+<% sections.forEach(section => { %>
+
+    <section class="portfolio">
+        <h1><%= section.title %></h1>
+        <ul>
+            <% section.sectionData.forEach(item => { %>
+                <%- include ('section-body', { section: section, sectionData: item }) %> 
+            <% }) %> 
+        </ul>
+    </section>
+
+<% }) %> 

@@ -1,0 +1,8 @@
+<li class="portfolio-item <% if(section.isLarge)  { %> portfolio-item-large <% } %>  ">
+    <h2> <%= sectionData.title %> </h2>
+    <small><%- sectionData.tags %> </small>
+    <p>
+        <%- sectionData.body %> 
+    </p>
+    <a href="<%= sectionData.link %>" target="new">Let me see ⟶</a>
+</li>

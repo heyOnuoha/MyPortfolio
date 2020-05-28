@@ -1,0 +1,56 @@
+new Profile({
+    profileName: 'Favour C. Onuoha',
+    profileTitle: 'Software Engineer',
+    profileLocation: 'Accra, Ghana',
+    profilePhoneNumber: '+233543767156',
+    profileEmail: 'favouronu@gmail.com',
+    profileLinks: [
+        {
+            outlet: 'Facebook',
+            link: 'https://www.facebook.com/FCOnuoha' 
+        },
+        {
+            outlet: 'Twitter',
+            link: 'https://www.twitter.com/valiantcoder'
+        }
+    ]
+}).save().then(_ => console.log('Profile Saved'))
+
+
+new Skill({
+    title: 'Tech Stacks',
+    skills: [
+        'JavaScript &bull; AngularJS',
+        'JavaScript &bull; Node &bull; Express',
+        'Dart &bull; Flutter',
+        'Java &bull; Android',
+        'Swift &bull; IOS',
+        'Python &bull; Django',
+        'C# &bull; ASP.NET CORE'
+    ]
+}).save()
+
+
+new Section({
+    title: 'People I worked with'
+}).save()
+
+new Section({
+    title: 'Projects Ive worked on'
+}).save()
+
+// new SectionBody({
+//     sectionId: 'b1b98619-5131-4635-80f4-ab26a0eec4cf',
+//     title: 'Enrout GH',
+//     tags: 'Delivery Service &bull; Angular JS &bull; Node &bull Firebase &bull; MongoDB',
+//     body: 'I currently am the lead backend engineer, building the core Enrout Realtime System that powers all our Mobile apps and Cashless Payment Processing as well as our Vendor platform and our Developer Partner API which has impacted the masses. I also developed our Operational Dashboard which handles all of our operation and is equipped with features such as Realtime Rider-Package Tracking, Full Rider and Delivery Oversite with Google Maps, Vendor/Fleet/Rider Registration, Developer API Assignment and many more features that makes operations smoother.',
+//     link: 'https://enroutdelivery.com'
+// }).save()
+
+// new SectionBody({
+//     sectionId: 'b1b98619-5131-4635-80f4-ab26a0eec4cf',
+//     title: 'Teksol LTD',
+//     tags: 'Enterprise Solutions &bull; Angular JS &bull; C# ASP.NET CORE &bull Azure WS &bull; MSSQL &bull; Desktop Apps',
+//     body: 'Teksol LTD is a software development company that specializes in building financial based apps. I worked on Prime 5, a full fledged banking application and ATLAS an Investment Portfolio and CIS Manager. I worked on MTN USSD, Mobile Money and SMS SOAP based integrations and built an Angular based Mobile Banking Dashboard, an ASP.NET CORE based API to deliver services to our Prime 5 Mobile Banking Dashboard and our USSD short code used by the customers of our clients. ',
+//     link: 'https://teksol.com.gh'
+// }).save()

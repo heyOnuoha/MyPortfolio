@@ -1,0 +1,20 @@
+<section class="portfolio">
+    <h1>Skills</h1>
+</section>
+
+<br>
+
+<section class="about">
+    
+    <% skills.forEach(skillData => { %>
+        <ul>
+            <h2> <%= skillData.title %> </h2>
+
+            <% skillData.skills.forEach(skill => { %>
+                <li>
+                    <p><%- skill %> </p>
+                </li>
+            <% }) %> 
+        </ul>
+    <% }) %>
+</section>
